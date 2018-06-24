@@ -63,9 +63,9 @@ namespace AutoTest
             driver.FindElement(By.Name("password")).SendKeys("Чапаев22");
             driver.FindElement(By.Name("enter")).Click();
             driver.Navigate().GoToUrl("http://teeda.mgates.ru/game/");
-            //driver.FindElement(By.XPath(@"//*[@id='containerAPI']/div[2]/div[2]/div[4]/div[1]/table/tbody/tr[2]/td/p/a/input")).Click();
+            driver.FindElement(By.XPath(@"//*[@id='containerAPI']/div[2]/div[2]/div[4]/div[1]/table/tbody/tr[2]/td/p/a/input")).Click();
             //driver.FindElement(By.XPath(@"//*[@id='containerAPI']/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[2]/td/p/a/input")).Click();
-            driver.FindElement(By.XPath(@"//*[@id='containerAPI']/div[2]/div[2]/div[4]/div[3]/table/tbody/tr[2]/td/p/a/input")).Click();
+            //driver.FindElement(By.XPath(@"//*[@id='containerAPI']/div[2]/div[2]/div[4]/div[3]/table/tbody/tr[2]/td/p/a/input")).Click();
 
             System.Threading.Thread.Sleep(5000);
             driver.FindElement(By.PartialLinkText("Приключения")).Click();
